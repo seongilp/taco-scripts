@@ -2,6 +2,12 @@
 (( EUID )) && echo You need to be root. && exit 1
 set -ex
 
+echo LC_ALL="en_US.UTF-8" >> /etc/environment
+echo LANG="en_US.UTF-8" >> /etc/environment
+
+echo LC_ALL="en_US.UTF-8" >> ~/.bashrc
+echo LANG="en_US.UTF-8" >> ~/.bashrc
+
 export LC_ALL="en_US.UTF-8"
 export PATH=$PATH:/usr/local/bin
 
